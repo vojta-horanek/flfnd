@@ -1,6 +1,8 @@
 #!/usr/bin/python
+
 #flfnd Copyright Vojtech Horanek 2015
 #flfnd = FiLe FiND
+#verision 0.2
 
 import os.path
 import sys
@@ -22,6 +24,7 @@ elif (sys.argv[1] == "--help"):
 elif (sys.argv[1] == "--about"):
 	print"Program to identify if the file exists"
 	print"Copyright Vojtech Horanek 2015"
+	printf "git-clone: https://github.com/vojta-horanek/flfnd.git " 
 	sys.exit()
 elif (sys.argv[1] == "--autor"):
 	print"Vojtech Horanek <vojtechhoranek@gmail.com>"
