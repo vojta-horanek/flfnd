@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 #flfnd Copyright Vojtech Horanek 2015
-#flfnd = FiLe FiND
+#flfnd = FiLe FiNDer
 #verision 0.2
 
 import os.path
