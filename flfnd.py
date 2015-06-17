@@ -2,7 +2,7 @@
 
 #flfnd Copyright Vojtech Horanek 2015
 #flfnd = FiLe FiNDer
-#verision 0.2
+#verision 0.3
 
 import os.path
 import sys
@@ -43,6 +43,9 @@ elif (sys.argv[1] == "-c"):
 		call("touch " + sys.argv[2], shell=True)
 		print "File %s was successfully created!" % sys.argv[2]
 		sys.exit()
+elif (os.path.isdir(sys.argv[1])):
+	print "<%s> is not file, but folder." % sys.argv[1]
+	sys.exit()
 else:
 	print"File <%s> wasn't found!" % sys.argv[1]
 	print"If you want to create use <flfnd -c %s>" % sys.argv[1]
