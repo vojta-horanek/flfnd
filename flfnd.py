@@ -16,6 +16,7 @@ if len(sys.argv)<2:
    sys.exit()	
 if (os.path.isfile(sys.argv[1])):
 	print "File <%s> was found!" % sys.argv[1]
+	print "Size of <%s>" % os.path.getsize
 	sys.exit()
 elif (sys.argv[1] == "--help"):
 	print "Add (only)one file argument to command"
